@@ -683,6 +683,25 @@ test_that("to_character.double and explicit_tagged_na", {
   )
 })
 
+test_that("to_character works on data.frame", {
+  df <- data.frame(
+    x = labelled(c(1, 1, 2), c(yes = 1, no = 2)),
+    y = c("a", "a", "b"),
+    z = 1:3,
+    stringsAsFactors = FALSE
+  )
+
+  df2 <- to_character(df)
+
+  expect_true(is.character(df2$x))
+  expect_equal(class(df2$y), class(df$y))
+  expect_equal(class(df2$z), class(df$z))
+
+  df3 <- to_character(df, labelled_only = FALSE)
+  expect_true(is.character(df3$y))
+  expect_true(is.character(df3$z))
+})
+
 # set_value_labels and add_value_labels ---------------------------------------
 
 test_that("set_value_labels replaces all value labels", {

@@ -22,6 +22,6 @@ below to see their documentation.
 \describe{
   \item{dplyr}{\code{\link[dplyr:reexports]{\%>\%}}}
 
-  \item{haven}{\code{\link[haven:tagged_na]{format_tagged_na}}, \code{\link[haven:labelled]{is.labelled}}, \code{\link[haven:tagged_na]{is_tagged_na}}, \code{\link[haven]{labelled}}, \code{\link[haven]{labelled_spss}}, \code{\link[haven:tagged_na]{na_tag}}, \code{\link[haven]{print_labels}}, \code{\link[haven:tagged_na]{print_tagged_na}}, \code{\link[haven]{tagged_na}}}
+  \item{haven}{\code{\link[haven:tagged_na]{format_tagged_na}}, \code{\link[haven:tagged_na]{is_tagged_na}}, \code{\link[haven:labelled]{is.labelled}}, \code{\link[haven]{labelled}}, \code{\link[haven]{labelled_spss}}, \code{\link[haven:tagged_na]{na_tag}}, \code{\link[haven]{print_labels}}, \code{\link[haven:tagged_na]{print_tagged_na}}, \code{\link[haven]{tagged_na}}}
 }}
 
